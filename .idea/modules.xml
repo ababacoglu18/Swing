@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JPasswordFieldKullaniciGirisi/JPasswordFieldKullaniciGirisi.iml" filepath="$PROJECT_DIR$/JPasswordFieldKullaniciGirisi/JPasswordFieldKullaniciGirisi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JTextAreaKelimeveHarfFrekansi/JTextAreaKelimeveHarfFrekansi.iml" filepath="$PROJECT_DIR$/JTextAreaKelimeveHarfFrekansi/JTextAreaKelimeveHarfFrekansi.iml" />
       <module fileurl="file://$PROJECT_DIR$/Swing.iml" filepath="$PROJECT_DIR$/Swing.iml" />
     </modules>
   </component>
