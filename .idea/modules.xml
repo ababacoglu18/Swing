@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DosyaIndirme/DosyaIndirme.iml" filepath="$PROJECT_DIR$/DosyaIndirme/DosyaIndirme.iml" />
       <module fileurl="file://$PROJECT_DIR$/SiparisUygulamasi/GercekSiparisUygulamasi/GercekSiparisUygulamasi.iml" filepath="$PROJECT_DIR$/SiparisUygulamasi/GercekSiparisUygulamasi/GercekSiparisUygulamasi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InputDialogJList/InputDialogJList.iml" filepath="$PROJECT_DIR$/InputDialogJList/InputDialogJList.iml" />
       <module fileurl="file://$PROJECT_DIR$/JComboBoxandRadioButton/JComboBoxandRadioButton.iml" filepath="$PROJECT_DIR$/JComboBoxandRadioButton/JComboBoxandRadioButton.iml" />
       <module fileurl="file://$PROJECT_DIR$/JPasswordFieldKullaniciGirisi/JPasswordFieldKullaniciGirisi.iml" filepath="$PROJECT_DIR$/JPasswordFieldKullaniciGirisi/JPasswordFieldKullaniciGirisi.iml" />
       <module fileurl="file://$PROJECT_DIR$/JTextAreaKelimeveHarfFrekansi/JTextAreaKelimeveHarfFrekansi.iml" filepath="$PROJECT_DIR$/JTextAreaKelimeveHarfFrekansi/JTextAreaKelimeveHarfFrekansi.iml" />
