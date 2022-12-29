@@ -1,12 +1,12 @@
 import javax.swing.*;
 import java.awt.event.*;
 
-public class Se extends JDialog {
+public class Pff3 extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
 
-    public Se() {
+    public Pff3() {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
@@ -50,7 +50,7 @@ public class Se extends JDialog {
     }
 
     public static void main(String[] args) {
-        Se dialog = new Se();
+        Pff3 dialog = new Pff3();
         dialog.pack();
         dialog.setVisible(true);
         System.exit(0);
