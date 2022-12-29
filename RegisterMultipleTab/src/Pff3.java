@@ -1,21 +1,20 @@
 import javax.swing.*;
 import java.awt.event.*;
+import java.util.ArrayList;
 
 public class Pff3 extends JDialog {
     private JPanel contentPane;
-    private JButton buttonOK;
+    private JButton buttonRegister;
     private JButton buttonCancel;
+    private JTextField kullanici_adi_alani;
+    private JPasswordField passwordField1;
 
     public Pff3() {
         setContentPane(contentPane);
         setModal(true);
-        getRootPane().setDefaultButton(buttonOK);
+        getRootPane().setDefaultButton(buttonRegister);
 
-        buttonOK.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onOK();
-            }
-        });
+
 
         buttonCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -37,6 +36,18 @@ public class Pff3 extends JDialog {
                 onCancel();
             }
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        buttonRegister.addActionListener(new ActionListener() {         //BUTON REGISTER
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                   String kullanici_adi =  kullanici_adi_alani.getText();
+                   String parola = new String(passwordField1.getPassword());
+                ArrayList<User> userlist = RegisterLoginMain.getUser_list_obj();
+                userlist.add(new User(kullanici_adi,parola));
+                System.out.println(userlist.size());
+                setVisible(false);
+
+            }
+        });
     }
 
     private void onOK() {
