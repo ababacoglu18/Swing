@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
@@ -25,7 +26,7 @@ public class JFChooserJColor {
               if(i == JFileChooser.APPROVE_OPTION){
                   File file = fc.getSelectedFile();
                   String icerik = "";                                                   //BUFFERED READER KULLAN TRWWITHRESOURCES
-                  try(Scanner scanner = new Scanner(new BufferedReader(new FileReader(file)))) {
+                  try(Scanner scanner = new Scanner(new BufferedReader(new FileReader(file)))) {    //TEKRAR ET
                     while (scanner.hasNextLine()){
                         icerik += scanner.nextLine() + "\n";
 
@@ -40,7 +41,15 @@ public class JFChooserJColor {
 
         }
     });
-}
+        renkDegistirButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Color color = JColorChooser.showDialog(null,"Bir renk seç",Color.RED);          //Renk Arkaplan Degistirme
+                
+                yaziAlani.setForeground(color);
+            }
+        });
+    }
     public static void main(String[] args) {
         JFrame frame = new JFrame("JFChooserJColor");
         frame.setContentPane(new JFChooserJColor().JFileblablaPanel);
