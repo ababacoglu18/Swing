@@ -19,9 +19,25 @@ public class Baglanti {
             throw new RuntimeException(e);
         }
     }
+    public void CalisanEkle(){
 
+        try {
+            statement = con.createStatement();
+            String ad  = "Semih";
+            String soyad = "Akbaş";
+            String email = "semiaktas@gmail.com";
+            String sorgu = "Insert Into calisanlar (ad,soyad,email) VALUES(" + "'" + ad + "'," + "'" + soyad + "'," + "'" + email + "')";
+
+            statement.executeUpdate(sorgu);
+
+            //INSERT INTO calisanlar (ad,soyad,email) VALUES('Yusuf','Çetinkaya','mucahit@gmail.com')
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
     public void CalisanlariGetir(){
-                    String sorgu = "Select * From calisanlar";  //* tüm özellikleri çeker.
+                    String sorgu = "Select * From calisanlar";//where id > 2";  //* tüm özellikleri çeker.
 
                 try {
                     statement = con.createStatement();
@@ -45,11 +61,37 @@ public class Baglanti {
                 }
             }
 
+            public void CalisanGuncelle(){
+                try {
+                    con.createStatement();
+                    String sorgu = "Update calisanlar Set email = 'example@gmail.com' where id > 5";
+
+                    statement.executeUpdate(sorgu);
+
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            public void CalisanSil(){
+                try {
+                 statement=    con.createStatement();
+                    String sorgu = "Delete from calisanlar where id > 5";
+                   statement.executeUpdate(sorgu);
+
+
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+
         public static void main(String[] args) {
             // Veritabanı bağlantısı için gerekli bilgiler              //CHATGPT YAZDI
-            String url = "jdbc:mysql://localhost:3306/demo";        //W3SCHOOLS
-            String username = "root";
-            String password = "";
+            String url = "jdbc:mysql://localhost:3306/demo" + "?useUnicode=true&characterEncoding=utf8";
+                                                                        //W3SCHOOLS
+            String username = "root";                               //SQL Sorguları var
+            String password = "";                                   //where; if;
 
             // Veritabanına bağlanmayı dene
             try (Connection con = DriverManager.getConnection(url, username, password)) {
@@ -59,6 +101,9 @@ public class Baglanti {
                 System.out.println("Bağlantı başarısız: " + e.getMessage());
             }
             Baglanti baglanti = new Baglanti();
+            baglanti.CalisanlariGetir();
+           // baglanti.CalisanGuncelle();
+            baglanti.CalisanSil();
             baglanti.CalisanlariGetir();
 
         }
