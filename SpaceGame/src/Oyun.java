@@ -69,8 +69,9 @@ public class Oyun extends JPanel implements KeyListener, ActionListener {
 
         try {
             image  = ImageIO.read(new FileImageInputStream(new File("uzaygemisi.png")));
+
         } catch (IOException e) {
-            throw new RuntimeException(e);
+          return;
         }
         setBackground(Color.BLACK);
     }

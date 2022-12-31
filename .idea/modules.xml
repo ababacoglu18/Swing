@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpaceGame/SpaceGame.iml" filepath="$PROJECT_DIR$/SpaceGame/SpaceGame.iml" />
       <module fileurl="file://$PROJECT_DIR$/StokUygulamasi/StokUygulamasi.iml" filepath="$PROJECT_DIR$/StokUygulamasi/StokUygulamasi.iml" />
       <module fileurl="file://$PROJECT_DIR$/Swing.iml" filepath="$PROJECT_DIR$/Swing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datab/datab.iml" filepath="$PROJECT_DIR$/datab/datab.iml" />
     </modules>
   </component>
 </project>
