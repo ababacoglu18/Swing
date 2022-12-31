@@ -33,7 +33,7 @@ public class MainScreen extends JFrame {
         mainScreen.add(grafikKullanimi);
         GrafikKullanimi grafikKullanimi1 = new GrafikKullanimi();
         grafikKullanimi1.requestFocus();
-        grafikKullanimi1.addKeyListener(grafikKullanimi);
+
 
         grafikKullanimi1.setFocusable(true);
 
