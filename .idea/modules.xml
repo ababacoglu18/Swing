@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JFileChooserJColorChooser/DatabaseConnection/DatabaseConnection.iml" filepath="$PROJECT_DIR$/JFileChooserJColorChooser/DatabaseConnection/DatabaseConnection.iml" />
       <module fileurl="file://$PROJECT_DIR$/DosyaIndirme/DosyaIndirme.iml" filepath="$PROJECT_DIR$/DosyaIndirme/DosyaIndirme.iml" />
       <module fileurl="file://$PROJECT_DIR$/SiparisUygulamasi/GercekSiparisUygulamasi/GercekSiparisUygulamasi.iml" filepath="$PROJECT_DIR$/SiparisUygulamasi/GercekSiparisUygulamasi/GercekSiparisUygulamasi.iml" />
       <module fileurl="file://$PROJECT_DIR$/GraphicsLib/GraphicsLib.iml" filepath="$PROJECT_DIR$/GraphicsLib/GraphicsLib.iml" />
@@ -16,7 +17,6 @@
       <module fileurl="file://$PROJECT_DIR$/SpaceGame/SpaceGame.iml" filepath="$PROJECT_DIR$/SpaceGame/SpaceGame.iml" />
       <module fileurl="file://$PROJECT_DIR$/StokUygulamasi/StokUygulamasi.iml" filepath="$PROJECT_DIR$/StokUygulamasi/StokUygulamasi.iml" />
       <module fileurl="file://$PROJECT_DIR$/Swing.iml" filepath="$PROJECT_DIR$/Swing.iml" />
-      <module fileurl="file://$PROJECT_DIR$/datab/datab.iml" filepath="$PROJECT_DIR$/datab/datab.iml" />
     </modules>
   </component>
 </project>
