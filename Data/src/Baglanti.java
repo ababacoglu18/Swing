@@ -25,7 +25,7 @@ public class Baglanti {
         try {
             preparedStatement.setInt(1, id);  //? yerine getirilecek deger
 
-           ResultSet rs =  preparedStatement.executeQuery();
+           ResultSet rs =  preparedStatement.executeQuery(); // Prepared statement detaylı araştırma
             while (rs.next()){
                String ad  = rs.getString("ad");
                String soyad  = rs.getString("soyad");
