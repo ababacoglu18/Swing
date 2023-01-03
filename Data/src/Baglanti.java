@@ -17,7 +17,7 @@ public class Baglanti {
     public void preparedCalisanlariGetir(int id){
         String sorgu = "Select * From calisanlar where id = ?";
         try {
-            preparedStatement  = con.prepareStatement(sorgu);
+            preparedStatement  = con.prepareStatement(sorgu);       //Gradle Daemon Problem datab failed.
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
